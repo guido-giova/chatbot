@@ -10,7 +10,7 @@ import java.util.List;
  * @param <E> Entity (source)
  * @param <D> DTO (Target)
  */
-public interface MapperParent<E, D> {
+public interface BaseMapper<E, D> {
     /**
      * Maps the given entity into the DTO
      *

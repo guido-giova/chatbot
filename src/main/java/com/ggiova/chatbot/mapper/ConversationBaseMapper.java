@@ -8,6 +8,6 @@ import org.mapstruct.Mapper;
  * Mapper for the Conversations
  */
 @Mapper(componentModel = "spring")
-public interface ConversationMapper
-         extends MapperParent<Conversation, ConversationListingDTO> {
+public interface ConversationBaseMapper
+         extends BaseMapper<Conversation, ConversationListingDTO> {
 }
