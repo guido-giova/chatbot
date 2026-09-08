@@ -1,5 +1,6 @@
 package com.ggiova.chatbot.controller;
 
+import com.ggiova.chatbot.entity.Conversation;
 import com.ggiova.chatbot.service.ConversationService;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +16,7 @@ public class ConversationController {
     }
     
     @GetMapping("/list")
-    public List<Object> listAllConversations() {
-        return null;
+    public List<Conversation> listAllConversations() {
+        return this.conversationService.listConversations();
     }
 }
